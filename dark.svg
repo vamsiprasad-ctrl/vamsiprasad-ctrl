@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="1180"
+    height="610"
+    viewBox="0 0 1180 610"
+    role="img"
+    aria-labelledby="title desc">
+
+<title>Premium GitHub Banner</title>
+<desc>Animated glassmorphism GitHub profile banner</desc>
+
+<defs>
+
+<!-- ========================================================= -->
+<!-- BACKGROUND -->
+<!-- ========================================================= -->
+
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+
+<stop offset="0%" stop-color="#030712">
+<animate
+attributeName="stop-color"
+values="#030712;#071026;#030712"
+dur="12s"
+repeatCount="indefinite"/>
+</stop>
+
+<stop offset="100%" stop-color="#0F172A">
+<animate
+attributeName="stop-color"
+values="#0F172A;#101B33;#0F172A"
+dur="12s"
+repeatCount="indefinite"/>
+</stop>
+
+</linearGradient>
+
+<!-- ========================================================= -->
+<!-- ACCENT -->
+<!-- ========================================================= -->
+
+<linearGradient id="accent"
+x1="0%"
+y1="0%"
+x2="100%"
+y2="0%">
+
+<stop offset="0%"
+stop-color="#7C3AED">
+
+<animate
+attributeName="stop-color"
+values="
+#7C3AED;
+#22D3EE;
+#10B981;
+#7C3AED"
+dur="8s"
+repeatCount="indefinite"/>
+
+</stop>
+
+<stop offset="50%"
+stop-color="#22D3EE">
+
+<animate
+attributeName="stop-color"
+values="
+#22D3EE;
+#10B981;
+#7C3AED;
+#22D3EE"
+dur="8s"
+repeatCount="indefinite"/>
+
+</stop>
+
+<stop offset="100%"
+stop-color="#10B981">
+
+<animate
+attributeName="stop-color"
+values="
+#10B981;
+#7C3AED;
+#22D3EE;
+#10B981"
+dur="8s"
+repeatCount="indefinite"/>
+
+</stop>
+
+</linearGradient>
+
+<!-- ========================================================= -->
+<!-- ASCII -->
+<!-- ========================================================= -->
+
+<linearGradient id="asciiGradient">
+
+<stop offset="0%" stop-color="#22D3EE"/>
+
+<stop offset="50%" stop-color="#8B5CF6"/>
+
+<stop offset="100%" stop-color="#10B981"/>
+
+<animateTransform
+attributeName="gradientTransform"
+type="rotate"
+values="
+0 .5 .5;
+360 .5 .5"
+dur="15s"
+repeatCount="indefinite"/>
+
+</linearGradient>
+
+<!-- ========================================================= -->
+<!-- PANEL -->
+<!-- ========================================================= -->
+
+<linearGradient
+id="glass"
+x1="0"
+y1="0"
+x2="0"
+y2="1">
+
+<stop offset="0%"
+stop-color="#FFFFFF"
+stop-opacity=".08"/>
+
+<stop offset="100%"
+stop-color="#FFFFFF"
+stop-opacity=".02"/>
+
+</linearGradient>
+
+<!-- ========================================================= -->
+<!-- GLOW -->
+<!-- ========================================================= -->
+
+<filter id="glow"
+x="-50%"
+y="-50%"
+width="200%"
+height="200%">
+
+<feGaussianBlur
+stdDeviation="8"
+result="blur"/>
+
+<feMerge>
+
+<feMergeNode in="blur"/>
+
+<feMergeNode in="SourceGraphic"/>
+
+</feMerge>
+
+</filter>
+
+<!-- ========================================================= -->
+<!-- SHADOW -->
+<!-- ========================================================= -->
+
+<filter id="shadow">
+
+<feDropShadow
+dx="0"
+dy="18"
+stdDeviation="20"
+flood-color="#000"
+flood-opacity=".45"/>
+
+</filter>
+
+<!-- ========================================================= -->
+<!-- NOISE -->
+<!-- ========================================================= -->
+
+<filter id="noise">
+
+<feTurbulence
+baseFrequency=".8"
+numOctaves="3"
+seed="2"
+type="fractalNoise">
+
+<animate
+attributeName="seed"
+values="2;10;25;40;2"
+dur="20s"
+repeatCount="indefinite"/>
+
+</feTurbulence>
+
+<feColorMatrix
+values="
+1 0 0 0 0
+0 1 0 0 0
+0 0 1 0 0
+0 0 0 .08 0"/>
+
+</filter>
+
+<!-- ========================================================= -->
+<!-- SHIMMER -->
+<!-- ========================================================= -->
+
+<linearGradient id="borderShimmer">
+
+<stop offset="0%"
+stop-color="transparent"/>
+
+<stop offset="50%"
+stop-color="#22D3EE"/>
+
+<stop offset="100%"
+stop-color="transparent"/>
+
+<animateTransform
+attributeName="gradientTransform"
+type="translate"
+values="
+-1 0;
+1 0;
+-1 0"
+dur="4s"
+repeatCount="indefinite"/>
+
+</linearGradient>
+
+<!-- ========================================================= -->
+<!-- CLIP -->
+<!-- ========================================================= -->
+
+<clipPath id="clip">
+
+<rect
+width="1180"
+height="610"
+rx="34"/>
+
+</clipPath>
+
+</defs>
+
+<!-- ========================================================= -->
+<!-- ROOT -->
+<!-- ========================================================= -->
+
+<g clip-path="url(#clip)">
+
+<rect
+width="1180"
+height="610"
+fill="url(#bg)"/>
+
+<!-- ========================================================= -->
+<!-- RADIAL GLOW -->
+<!-- ========================================================= -->
+
+<circle
+cx="120"
+cy="120"
+r="220"
+fill="#22D3EE"
+opacity=".08">
+
+<animateTransform
+attributeName="transform"
+type="translate"
+values="
+0 0;
+30 20;
+0 0"
+dur="15s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<circle
+cx="1050"
+cy="470"
+r="260"
+fill="#7C3AED"
+opacity=".08">
+
+<animateTransform
+attributeName="transform"
+type="translate"
+values="
+0 0;
+-25 -18;
+0 0"
+dur="14s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<circle
+cx="640"
+cy="590"
+r="180"
+fill="#10B981"
+opacity=".05">
+
+<animateTransform
+attributeName="transform"
+type="translate"
+values="
+0 0;
+15 -15;
+0 0"
+dur="16s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- ========================================================= -->
+<!-- GLASS CONTAINER -->
+<!-- ========================================================= -->
+
+<rect
+x="35"
+y="35"
+width="1110"
+height="540"
+rx="30"
+fill="#0F172A"
+fill-opacity=".78"
+stroke="rgba(255,255,255,.08)"
+filter="url(#shadow)"/>
+
+<rect
+x="35"
+y="35"
+width="1110"
+height="540"
+rx="30"
+fill="url(#glass)"/>
+
+<!-- border shimmer -->
+
+<rect
+x="35"
+y="35"
+width="1110"
+height="540"
+rx="30"
+fill="none"
+stroke="url(#borderShimmer)"
+stroke-width="1.4"/>
+
+<!-- ========================================================= -->
+<!-- PARTICLES -->
+<!-- ========================================================= -->
+
+<g fill="#22D3EE">
+
+<circle cx="80" cy="80" r="1.6">
+<animateMotion dur="18s" repeatCount="indefinite"
+path="M0,0 C250,120 450,-80 950,300"/>
+</circle>
+
+<circle cx="250" cy="520" r="1.3">
+<animateMotion dur="16s" repeatCount="indefinite"
+path="M0,0 C400,-250 700,-100 850,-500"/>
+</circle>
+
+<circle cx="1040" cy="120" r="1.5">
+<animateMotion dur="20s" repeatCount="indefinite"
+path="M0,0 C-300,180 -600,250 -900,420"/>
+</circle>
+
+</g>
+
+<!-- Remaining content continues in Part 2 -->
+<!-- ========================================================= -->
+<!-- LEFT PANEL -->
+<!-- ========================================================= -->
+
+<g id="left-panel">
+
+  <rect
+      x="55"
+      y="55"
+      width="390"
+      height="500"
+      rx="24"
+      fill="#050816"
+      fill-opacity=".55"
+      stroke="#FFFFFF"
+      stroke-opacity=".05"/>
+
+  <!-- Glass Reflection -->
+
+  <path
+      d="M55 55
+         L180 55
+         L95 555
+         L55 555 Z"
+      fill="#FFFFFF"
+      opacity=".025"/>
+
+  <!-- Scanline -->
+
+  <rect
+      x="55"
+      y="80"
+      width="390"
+      height="2"
+      fill="#FFFFFF"
+      opacity=".12">
+
+      <animate
+          attributeName="y"
+          values="
+          80;
+          540;
+          80"
+          dur="8s"
+          repeatCount="indefinite"/>
+
+  </rect>
+
+  <!-- ASCII Floating Group -->
+
+  <g
+      transform="translate(78 90)"
+      filter="url(#glow)">
+
+      <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="
+          78 90;
+          78 82;
+          78 90"
+          dur="6s"
+          repeatCount="indefinite"/>
+
+<!-- ========================================================= -->
+<!-- ASCII -->
+<!-- ========================================================= -->
+
+<g
+font-family="Consolas,Monaco,monospace"
+font-size="11"
+fill="url(#asciiGradient)"
+letter-spacing="1">
+
+<!-- line 1 -->
+
+<text x="0" y="0" opacity="0">
+██████████████████████
+<animate
+attributeName="opacity"
+begin=".2s"
+dur=".15s"
+fill="freeze"
+to="1"/>
+</text>
+
+<!-- line 2 -->
+
+<text x="0" y="16" opacity="0">
+███████      ████████
+<animate
+attributeName="opacity"
+begin=".4s"
+dur=".15s"
+fill="freeze"
+to="1"/>
+</text>
+
+<!-- line 3 -->
+
+<text x="0" y="32" opacity="0">
+█████  ████  ████████
+<animate
+attributeName="opacity"
+begin=".6s"
+dur=".15s"
+fill="freeze"
+to="1"/>
+</text>
+
+<!-- line 4 -->
+
+<text x="0" y="48" opacity="0">
+████  ██████  ███████
+<animate
+attributeName="opacity"
+begin=".8s"
+dur=".15s"
+fill="freeze"
+to="1"/>
+</text>
+
+<!-- line 5 -->
+
+<text x="0" y="64" opacity="0">
+███  ████████  ██████
+<animate
+attributeName="opacity"
+begin="1.0s"
+dur=".15s"
+fill="freeze"
+to="1"/>
+</text>
+
+<!-- eyes -->
+
+<text
+x="54"
+y="108"
+font-size="15"
+opacity="0">
+
+◉     ◉
+
+<animate
+attributeName="opacity"
+begin="1.4s"
+dur=".2s"
+fill="freeze"
+to="1"/>
+
+</text>
+
+<!-- nose -->
+
+<text
+x="70"
+y="126"
+opacity="0">
+
+▲
+
+<animate
+attributeName="opacity"
+begin="1.6s"
+dur=".2s"
+fill="freeze"
+to="1"/>
+
+</text>
+
+<!-- mouth -->
+
+<text
+x="62"
+y="144"
+opacity="0">
+
+╰────╯
+
+<animate
+attributeName="opacity"
+begin="1.8s"
+dur=".2s"
+fill="freeze"
+to="1"/>
+
+</text>
+
+<!-- body -->
+
+<text
+x="42"
+y="174"
+opacity="0">
+
+╱██████╲
+
+<animate
+attributeName="opacity"
+begin="2s"
+dur=".2s"
+fill="freeze"
+to="1"/>
+
+</text>
+
+<text
+x="36"
+y="194"
+opacity="0">
+
+██╱    ╲██
+
+<animate
+attributeName="opacity"
+begin="2.2s"
+dur=".2s"
+fill="freeze"
+to="1"/>
+
+</text>
+
+<text
+x="32"
+y="214"
+opacity="0">
+
+██      ██
+
+<animate
+attributeName="opacity"
+begin="2.4s"
+dur=".2s"
+fill="freeze"
+to="1"/>
+
+</text>
+
+<text
+x="42"
+y="234"
+opacity="0">
+
+╲██████╱
+
+<animate
+attributeName="opacity"
+begin="2.6s"
+dur=".2s"
+fill="freeze"
+to="1"/>
+
+</text>
+
+<!-- terminal typing -->
+
+<text
+x="0"
+y="300"
+font-size="12">
+
+&gt; loading profile...
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur="1s"
+begin="3s"
+fill="freeze"/>
+
+</text>
+
+<text
+x="0"
+y="324"
+font-size="12">
+
+&gt; initializing modules...
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur="1s"
+begin="4s"
+fill="freeze"/>
+
+</text>
+
+<text
+x="0"
+y="348"
+font-size="12">
+
+&gt; connecting github...
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur="1s"
+begin="5s"
+fill="freeze"/>
+
+</text>
+
+<text
+x="0"
+y="372"
+font-size="12">
+
+&gt; done
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur=".5s"
+begin="6s"
+fill="freeze"/>
+
+</text>
+
+<!-- blinking cursor -->
+
+<rect
+x="58"
+y="362"
+width="8"
+height="12"
+fill="#22D3EE">
+
+<animate
+attributeName="opacity"
+values="1;0;1"
+dur="1s"
+repeatCount="indefinite"/>
+
+</rect>
+
+</g>
+
+</g>
+
+</g>
+
+<!-- ========================================================= -->
+<!-- End Left Panel -->
+<!-- ========================================================= -->
+  <!-- ========================================================= -->
+<!-- RIGHT PANEL -->
+<!-- ========================================================= -->
+
+<g id="right-panel">
+
+  <!-- Terminal Window -->
+  <rect
+      x="480"
+      y="55"
+      width="645"
+      height="500"
+      rx="24"
+      fill="#0B1220"
+      fill-opacity=".78"
+      stroke="#FFFFFF"
+      stroke-opacity=".06"/>
+
+  <!-- Terminal Header -->
+  <rect
+      x="480"
+      y="55"
+      width="645"
+      height="48"
+      rx="24"
+      fill="#111827"/>
+
+  <!-- macOS Window Controls -->
+  <circle cx="510" cy="79" r="6" fill="#FF5F57"/>
+  <circle cx="530" cy="79" r="6" fill="#FEBC2E"/>
+  <circle cx="550" cy="79" r="6" fill="#28C840"/>
+
+  <!-- ========================================================= -->
+  <!-- Greeting -->
+  <!-- ========================================================= -->
+
+  <g font-family="Inter,Segoe UI,sans-serif">
+
+    <text
+        x="520"
+        y="150"
+        font-size="22"
+        fill="#94A3B8"
+        opacity="0">
+
+      Hi 👋
+
+      <animate
+          attributeName="opacity"
+          begin=".5s"
+          dur=".3s"
+          fill="freeze"
+          to="1"/>
+
+    </text>
+
+    <text
+        x="520"
+        y="195"
+        font-size="42"
+        font-weight="700"
+        fill="#F8FAFC"
+        opacity="0">
+
+      I'm Vamsi Prasad
+
+      <animate
+          attributeName="opacity"
+          begin="1s"
+          dur=".4s"
+          fill="freeze"
+          to="1"/>
+
+    </text>
+
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- Typing Text -->
+  <!-- ========================================================= -->
+
+  <g
+      font-family="Consolas,monospace"
+      font-size="22"
+      fill="url(#accent)">
+
+    <text x="520" y="245">
+
+      <tspan opacity="1">
+
+        Frontend Engineer
+
+        <animate
+            attributeName="opacity"
+            values="1;0;0"
+            dur="15s"
+            repeatCount="indefinite"/>
+
+      </tspan>
+
+      <tspan opacity="0">
+
+        Full Stack Developer
+
+        <animate
+            attributeName="opacity"
+            values="0;1;0"
+            begin="5s"
+            dur="15s"
+            repeatCount="indefinite"/>
+
+      </tspan>
+
+      <tspan opacity="0">
+
+        Open Source Contributor
+
+        <animate
+            attributeName="opacity"
+            values="0;0;1"
+            begin="10s"
+            dur="15s"
+            repeatCount="indefinite"/>
+
+      </tspan>
+
+    </text>
+
+    <!-- Cursor -->
+
+    <rect
+        x="820"
+        y="228"
+        width="10"
+        height="22"
+        fill="#22D3EE">
+
+      <animate
+          attributeName="opacity"
+          values="1;0;1"
+          dur="1s"
+          repeatCount="indefinite"/>
+
+    </rect>
+
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- Profile Info -->
+  <!-- ========================================================= -->
+
+  <g
+      font-family="Inter"
+      font-size="17"
+      fill="#CBD5E1">
+
+    <text x="520" y="300" opacity="0">
+📍 India
+      <animate attributeName="opacity"
+               begin="2.2s"
+               dur=".3s"
+               fill="freeze"
+               to="1"/>
+    </text>
+
+    <text x="520" y="332" opacity="0">
+🎓 B.Tech • CSE (Data Science)
+      <animate attributeName="opacity"
+               begin="2.8s"
+               dur=".3s"
+               fill="freeze"
+               to="1"/>
+    </text>
+
+    <text x="520" y="364" opacity="0">
+🚀 Current Focus • AI + Full Stack
+      <animate attributeName="opacity"
+               begin="3.4s"
+               dur=".3s"
+               fill="freeze"
+               to="1"/>
+    </text>
+
+    <text x="520" y="396" opacity="0">
+🌐 Portfolio • vamsiprasadpurum.netlify.app
+      <animate attributeName="opacity"
+               begin="4s"
+               dur=".3s"
+               fill="freeze"
+               to="1"/>
+    </text>
+
+    <text x="520" y="428" opacity="0">
+✉ vamsiprasad@proton.me
+      <animate attributeName="opacity"
+               begin="4.6s"
+               dur=".3s"
+               fill="freeze"
+               to="1"/>
+    </text>
+
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- Skills -->
+  <!-- ========================================================= -->
+
+  <g font-family="Inter" font-size="14">
+
+    <!-- React -->
+    <rect x="520" y="455" width="82" height="34" rx="17"
+          fill="#1E293B"
+          stroke="url(#accent)"/>
+    <text x="541" y="477" fill="#F8FAFC">React</text>
+
+    <!-- Next -->
+    <rect x="615" y="455" width="90" height="34" rx="17"
+          fill="#1E293B"
+          stroke="url(#accent)"/>
+    <text x="635" y="477" fill="#F8FAFC">Next.js</text>
+
+    <!-- Node -->
+    <rect x="720" y="455" width="86" height="34" rx="17"
+          fill="#1E293B"
+          stroke="url(#accent)"/>
+    <text x="742" y="477" fill="#F8FAFC">Node.js</text>
+
+    <!-- TypeScript -->
+    <rect x="820" y="455" width="110" height="34" rx="17"
+          fill="#1E293B"
+          stroke="url(#accent)"/>
+    <text x="839" y="477" fill="#F8FAFC">TypeScript</text>
+
+    <!-- Tailwind -->
+    <rect x="520" y="502" width="95" height="34" rx="17"
+          fill="#1E293B"
+          stroke="url(#accent)"/>
+    <text x="538" y="524" fill="#F8FAFC">Tailwind</text>
+
+    <!-- Python -->
+    <rect x="628" y="502" width="90" height="34" rx="17"
+          fill="#1E293B"
+          stroke="url(#accent)"/>
+    <text x="651" y="524" fill="#F8FAFC">Python</text>
+
+    <!-- Docker -->
+    <rect x="732" y="502" width="88" height="34" rx="17"
+          fill="#1E293B"
+          stroke="url(#accent)"/>
+    <text x="753" y="524" fill="#F8FAFC">Docker</text>
+
+    <!-- AWS -->
+    <rect x="835" y="502" width="70" height="34" rx="17"
+          fill="#1E293B"
+          stroke="url(#accent)"/>
+    <text x="857" y="524" fill="#F8FAFC">AWS</text>
+
+  </g>
+
+</g>
+
+<!-- ========================================================= -->
+<!-- End Right Panel -->
+<!-- ========================================================= -->
+  <!-- ========================================================= -->
+<!-- SOCIAL LINKS -->
+<!-- ========================================================= -->
+
+<g id="social-links" transform="translate(520 560)">
+
+  <!-- GitHub -->
+  <g>
+    <circle
+      cx="0"
+      cy="0"
+      r="16"
+      fill="#111827"
+      stroke="url(#accent)"
+      stroke-width="1.2">
+      <animate attributeName="r"
+               values="16;17;16"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <text
+      x="-8"
+      y="5"
+      font-family="Inter"
+      font-size="12"
+      fill="#F8FAFC">
+      GH
+    </text>
+  </g>
+
+  <!-- LinkedIn -->
+  <g transform="translate(55 0)">
+    <circle
+      cx="0"
+      cy="0"
+      r="16"
+      fill="#111827"
+      stroke="url(#accent)"
+      stroke-width="1.2"/>
+    <text
+      x="-8"
+      y="5"
+      font-family="Inter"
+      font-size="12"
+      fill="#F8FAFC">
+      IN
+    </text>
+  </g>
+
+  <!-- Twitter / X -->
+  <g transform="translate(110 0)">
+    <circle
+      cx="0"
+      cy="0"
+      r="16"
+      fill="#111827"
+      stroke="url(#accent)"
+      stroke-width="1.2"/>
+    <text
+      x="-6"
+      y="5"
+      font-family="Inter"
+      font-size="12"
+      fill="#F8FAFC">
+      X
+    </text>
+  </g>
+
+  <!-- Portfolio -->
+  <g transform="translate(165 0)">
+    <circle
+      cx="0"
+      cy="0"
+      r="16"
+      fill="#111827"
+      stroke="url(#accent)"
+      stroke-width="1.2"/>
+    <text
+      x="-7"
+      y="5"
+      font-family="Inter"
+      font-size="12"
+      fill="#F8FAFC">
+      WEB
+    </text>
+  </g>
+
+</g>
+
+<!-- ========================================================= -->
+<!-- FLOATING NOISE OVERLAY -->
+<!-- ========================================================= -->
+
+<rect
+    width="1180"
+    height="610"
+    filter="url(#noise)"
+    opacity=".04"/>
+
+<!-- ========================================================= -->
+<!-- GLASS HIGHLIGHT -->
+<!-- ========================================================= -->
+
+<path
+    d="
+    M60 60
+    L430 60
+    L260 550
+    L60 550
+    Z"
+    fill="#FFFFFF"
+    opacity=".02"/>
+
+<path
+    d="
+    M500 60
+    L1120 60
+    L950 550
+    L500 550
+    Z"
+    fill="#FFFFFF"
+    opacity=".015"/>
+
+<!-- ========================================================= -->
+<!-- CORNER GLOW -->
+<!-- ========================================================= -->
+
+<circle
+    cx="80"
+    cy="70"
+    r="80"
+    fill="#22D3EE"
+    opacity=".05">
+
+    <animate
+        attributeName="opacity"
+        values=".03;.07;.03"
+        dur="6s"
+        repeatCount="indefinite"/>
+
+</circle>
+
+<circle
+    cx="1100"
+    cy="540"
+    r="100"
+    fill="#7C3AED"
+    opacity=".05">
+
+    <animate
+        attributeName="opacity"
+        values=".04;.08;.04"
+        dur="8s"
+        repeatCount="indefinite"/>
+
+</circle>
+
+<!-- ========================================================= -->
+<!-- SHIMMER LINE -->
+<!-- ========================================================= -->
+
+<rect
+    x="-300"
+    y="0"
+    width="220"
+    height="610"
+    fill="url(#glass)"
+    opacity=".10">
+
+    <animate
+        attributeName="x"
+        values="-300;1400"
+        dur="10s"
+        repeatCount="indefinite"/>
+
+</rect>
+
+<!-- ========================================================= -->
+<!-- SUBTLE VIGNETTE -->
+<!-- ========================================================= -->
+
+<rect
+    width="1180"
+    height="610"
+    rx="34"
+    fill="none"
+    stroke="#000000"
+    stroke-opacity=".12"/>
+
+<!-- ========================================================= -->
+<!-- END ROOT GROUP -->
+<!-- ========================================================= -->
+
+</g>
+
+</svg>
